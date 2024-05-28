@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #212121;
+  width: 100vw;
+  overflow: hidden;
+}
+/* //https://www.iconfinder.com/ */
+
+span {
+  background: url("https://cdn2.iconfinder.com/data/icons/valentine-day-16/512/556_Heart_Emoji_Smiley_Face_smile_valentine_valentines_day_love-256.png");
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-size: cover;
+  /* to create heart at only mouse position */
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: trailAnimate 6s linear;
+}
+
+
+@keyframes trailAnimate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+  }
+
+
