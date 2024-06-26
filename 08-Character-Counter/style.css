@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+}
+
+.container{
+    width: 500px;
+    height: auto;
+    background-color: #212121;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    padding: 20px 20px 30px 20px;
+    margin: 5px;
+    color: #b4b4b4b7;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.counter-container p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.counter-container .total-counter{
+    color: #3fff76;
+    font-size: 18px;
+}
+
+.counter-container .remaining-counter{
+    color: #ff5252;
+    font-size: 22px;
+}
