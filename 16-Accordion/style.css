@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    color: #ddddddb7;
+    height: 100%;
+    width: 100%;
+
+}
+
+.container{
+    max-width: 450px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+h1{
+    font-size: 40px;
+    color: #83ff8e;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.accordion_item{
+    margin-top: 20px;
+    background-color: #20201f;
+    padding: 20px 18px;
+    border-radius: 10px;
+}
+
+.accordion_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion_title h3{
+    flex: 1;
+    font-size: 16px;
+    color: #fff5c8;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.accordion_content p{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.accordion_title i{
+    font-size: 18px;
+    color: #83ff8e;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion_content{
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.accordion_title.active + .accordion_content{
+    display: block;
+    max-height: 1000px;
+}
+
+.accordion_title.active i{
+    transform: rotate(180deg);
+}
