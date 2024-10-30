@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url("universe.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.container img{
+    width: 100px;
+}
